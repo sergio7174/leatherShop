@@ -83,12 +83,13 @@ $ npm start (to start the server) OR nodemon server
 - User registration and login
 - Authentication using JWT Tokens
 - Add, edit, delete Products
- - Leave a Reviews
-- Delete Reviews
-- Password Update
 - Search Live
 - 404 Page and many more
 - Responsive Design
+- Different actions allowed for users and admins;
+- CRUD operations with items, orders, user addresses, cart;
+- Filtering and sorting items;
+
 <br/>
 
 ##  Technologies used
