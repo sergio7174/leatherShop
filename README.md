@@ -73,9 +73,9 @@ $ npm start (to start the server) OR nodemon server
 <img src="./leather-store-main/systemimages/image01.jpg" alt="project screenshot02" />
 <img src="./leather-store-main/systemimages/image02.jpg" alt="project screenshot03" />
 <img src="./leather-store-main/systemimages/image03.jpg" alt="project screenshot04" />
-<img src="./leather-store-main/systemimages/image04.jpg" alt="project screenshot05" />
-<img src="./leather-store-main/systemimages/image05.jpg" alt="project screenshot06" />
-<img src="./leather-store-main/systemimages/image06.jpg" alt="project screenshot07" />
+<img src="./leather-store-main/systemimages/image05.jpg" alt="project screenshot05" />
+<img src="./leather-store-main/systemimages/image06.jpg" alt="project screenshot06" />
+<img src="./leather-store-main/systemimages/image07.jpg" alt="project screenshot07" />
 <br>
 
 ##  Key Features:
