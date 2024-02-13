@@ -1,0 +1,17 @@
+@import '../../base-styles/mixins.scss';
+@import '../../base-styles/variables.scss';
+
+.contacts {
+  @include main-block;
+  @include header-footer;
+  &__container {
+    font-size: 2rem;
+
+    &-heading {
+      @include heading;
+    }
+    & p {
+      width: 40rem;
+    }
+  }
+}

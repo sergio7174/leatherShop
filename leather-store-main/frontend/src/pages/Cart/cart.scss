@@ -1,0 +1,63 @@
+@import '../../base-styles/variables.scss';
+@import '../../base-styles/mixins.scss';
+
+.cart {
+  @include main-block;
+  @include header-footer;
+  margin-top: 2rem;
+
+  &__modal {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  &__heading {
+    @include heading;
+  }
+
+  &__container {
+    margin-bottom: 4rem;
+
+    & .spinner {
+      height: 24rem;
+    }
+
+    &-empty {
+      font-size: 2rem;
+      text-align: center;
+      color: $color-grey--dark;
+    }
+    &__order {
+      border: 1px solid $color-grey--medium;
+      &__total {
+        padding: 2rem 1rem;
+        background-color: $color-grey--medium;
+        font-size: 2.5rem;
+        font-weight: 700;
+
+        & p {
+          width: fit-content;
+          margin-left: auto;
+          font-size: 2rem;
+          @include max400 {
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+
+    &__btn {
+      margin-top: 2rem;
+      @include center;
+    }
+    & svg {
+      width: 2rem;
+      height: 2rem;
+      cursor: pointer;
+
+      &:hover {
+        filter: invert(30%);
+      }
+    }
+  }
+}

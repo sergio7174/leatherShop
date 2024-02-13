@@ -1,0 +1,43 @@
+@import '../../../base-styles/variables.scss';
+@import '../../../base-styles/mixins.scss';
+
+
+.iconMenu {
+  width: 2.8rem;
+  height: 2.8rem;}
+
+.home-items {
+  @include main-block;
+  margin: 4rem auto;
+  background-image:linear-gradient(to right top,#f7d074,#653e03);
+
+  &__heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2rem;
+    &-link {
+      //color: $color-grey--dark !important;
+      color:azure;
+      font-size: 2rem;
+
+      &:hover {
+        color: $color-grey--medium !important;
+      }
+    }
+  }
+  &__container {
+    @include items-section--home;
+    margin-top: 2rem;
+    
+    @include max1000 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-items: center;
+    }
+
+    @include max700 {
+      @include list;
+    }
+  }
+}

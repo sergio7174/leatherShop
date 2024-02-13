@@ -1,0 +1,54 @@
+@import '../../base-styles/mixins.scss';
+@import '../../base-styles/variables.scss';
+@import '../../base-styles/animations.scss';
+
+.register {
+  @include main-block;
+  @include header-footer;
+  background-image: url('../../assets/img/LEATHERBACKGROUND02.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 110% !important;
+
+  &__container {
+    margin: 0 auto;
+    width: 40%;
+    border-radius: 3em;
+    text-align: center;
+    font-size: 1.5rem;
+    animation: up 0.5s ease;
+
+    &__heading {
+      @include heading;
+    }
+    &__form {
+      @include center;
+      flex-direction: column;
+      font-size: 1.5rem;
+
+      &__box {
+        @include input-box;
+      }
+      
+      &__bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 6rem;
+      }
+      
+      .transBackground{ background-color: transparent; 
+        //background-color: rgb(80, 78, 78);
+        //color: rgb(49, 48, 48); 
+        //color: black;
+        cursor: pointer;
+        border: 0em;
+      position: relative;
+      left: -3em;
+      //left: 88%;
+      
+      top: 2.7em}
+    }
+  }
+}

@@ -1,0 +1,163 @@
+@import '../../base-styles/mixins.scss';
+@import '../../base-styles/variables.scss';
+
+.header {
+  font-size: 2rem;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  background-color: rgba(255, 255, 255, 0.95);
+  background-color: rgba(220, 213, 193, 0.95);
+  color: black;
+  border-bottom: 1.5px solid $color-grey--light;
+  width: 100%;
+
+  &__container {
+    @include main-block;
+    margin: 0 auto;
+
+    &__admin {
+      height: $header-height;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      justify-content: space-around;
+      align-items: center;
+      @include max700 {
+        font-size: 1.7rem;
+      }
+      @include max500 {
+        display: none;
+      }
+
+      &-link {
+        color: $color-grey--dark !important;
+        cursor: pointer;
+        &-active {
+          position: relative;
+          transition: all 0.2s;
+          &::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            right: 0;
+            height: 1px;
+            width: 100%;
+            background-color: black;
+            @include max500 {
+              height: 0px;
+            }
+          }
+        }
+      }
+    }
+
+    &-inner {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: $header-height;
+      color: black;
+
+      @include max700 {
+        padding-right: 1rem;
+      }
+
+      &__logo {
+        font-weight: 700;
+        @include hover;
+        @include max400 {
+          width: 35%;
+        }
+        @include max300 {
+          display: none;
+        }
+      }
+
+      &__nav {
+        display: flex;
+        justify-content: flex-end;
+        gap: 2rem;
+        width: 9rem;
+        display: flex;
+        color: black;
+
+        @include max300 {
+          width: 100%;
+          // justify-content: space-between;
+        }
+        &-catalog {
+          margin-right: 10rem;
+          margin-right: 0rem;
+          @include hover;
+          @include max700 {
+            margin-right: 5rem;
+            margin-right: 0rem;
+          }
+          @include max500 {
+            margin-right: 3rem;
+          }
+          @include max400 {
+            margin-right: 1rem;
+          }
+          @include max300 {
+            margin-right: auto;
+          }
+        }
+        &-icon {
+          width: 2rem;
+          height: 2rem;
+          @include hover;
+        }
+        &-iconMenu {
+          width: 2.8rem;
+          height: 2.8rem;
+        } 
+      }
+    }
+  }
+}
+
+.link-user {
+  position: relative;
+}
+.link-cart {
+  position: relative;
+}
+
+.mobile {
+  display: none;
+  @include max500 {
+    @include center;
+    height: 5rem;
+    margin: 0 auto;
+    font-size: 2.5rem;
+
+    &__menu {
+      @include list;
+      width: 100%;
+      align-items: center;
+      gap: 2rem;
+      height: 20rem;
+      background-color: white;
+      position: absolute;
+      overflow: hidden;
+      top: 5rem;
+      transition: all 0.1s ease-in-out;
+
+      &-link {
+        @include hover;
+      }
+
+      &--open {
+        max-height: 20rem;
+      }
+      &--closed {
+        max-height: 0rem;
+      }
+    }
+  }
+}

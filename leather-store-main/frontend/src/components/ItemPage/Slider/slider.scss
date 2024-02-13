@@ -1,0 +1,39 @@
+@import '../../../base-styles/variables.scss';
+@import '../../../base-styles/mixins.scss';
+
+.slider {
+  display: flex;
+  overflow: hidden;
+
+  &-img {
+    width: 100%;
+    transition: transform 0.5s;
+  }
+}
+
+.leftArrow,
+.rightArrow {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 8rem;
+  padding: 3rem;
+  height: 100%;
+  cursor: pointer;
+  z-index: 2;
+
+  @include max400 {
+    width: 6rem;
+    padding: 2rem;
+  }
+  @include max300 {
+    width: 6rem;
+    padding: 2.2rem;
+  }
+}
+.leftArrow {
+  left: -1rem;
+}
+.rightArrow {
+  right: -1rem;
+}

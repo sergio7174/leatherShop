@@ -1,0 +1,29 @@
+@import '../../../../base-styles/mixins.scss';
+@import '../../../../base-styles/variables.scss';
+
+.address {
+  &__top {
+    display: flex;
+    justify-content: space-between;
+
+    @include max500 {
+      @include list;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+  }
+  &__heading {
+    @include heading;
+  }
+
+  &__container {
+    &-empty {
+      font-size: 2rem;
+    }
+    &__list {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      @include list;
+    }
+  }
+}

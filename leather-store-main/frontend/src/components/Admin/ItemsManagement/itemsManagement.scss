@@ -1,0 +1,48 @@
+@import '../../../base-styles/mixins.scss';
+@import '../../../base-styles/variables.scss';
+
+.items {
+  @include main-block;
+  margin: 4rem auto 0 auto;
+  min-width: 110%;
+  @include header-footer;
+  position: relative;
+  background-image: url('../../../assets/img/LEATHERBACKGROUNDlight04.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  & button {
+    margin-bottom: 4rem;
+  }
+
+  &-heading {
+    @include heading;
+  }
+
+  &__container {
+    @include list;
+    padding-bottom: 2rem;
+
+    &-empty {
+      font-size: 2rem;
+    }
+
+    &__item {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      height: 10rem;
+
+      &-delete {
+        @include center;
+        width: 8%;
+
+        & svg {
+          width: 2rem;
+          height: 2rem;
+          @include hover;
+        }
+      }
+    }
+  }
+}

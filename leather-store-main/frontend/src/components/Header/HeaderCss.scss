@@ -1,0 +1,260 @@
+$color_1: rgb(9, 14, 90);
+$color_2: rgb(11, 1, 1);
+$background-color_1:rgba(220, 213, 193, 0.95);
+$background-color_2: rgba(0, 0, 0, 0.3);
+$background-color_3: rgb(9, 14, 90);
+$background-color_4: rgb(220, 220, 250);
+$background-color_5: rgb(230, 230, 230);
+
+/* Hover effects */
+/* responsive navbar toggle button */
+/* when nav toggle button not checked */
+/* when nav toggle button is checked */
+/* Responsive dropdown code */
+/* Text color */
+/* Dropdown menu CSS code */
+/* on hover show dropdown */
+/* drondown links */
+.navbar {
+	height: 70px;
+	width: 100%;
+	padding: 19px 30px;
+	background-color: $background-color_1;
+	position: relative;
+	.nav-header {
+		display: inline;
+		.nav-logo {
+			display: inline-block;
+			margin-top: -7px;
+		}
+	}
+	.nav-links {
+		display: inline-flex;
+		float: right;
+		font-size: 18px;
+		.loginBtn {
+			display: inline-block;
+			padding: 5px 15px;
+			margin-left: 20px;
+			font-size: 17px;
+			color: $color_1;
+		}
+		a {
+			padding: 10px 12px;
+			text-decoration: none;
+			font-weight: 550;
+			color: $color_2;
+			&:hover {
+				background-color: $background-color_2;
+			}
+		}
+	}
+	#nav-check {
+		display: none;
+	}
+	.nav-btn {
+		display: none;
+	}
+}
+/*.dropdown {
+	position: relative;
+	display: inline-block;
+
+
+	&:hover {
+		.drop-content {
+			display: block;
+		}
+		.dropBtn {
+			background-color: $background-color_2;
+			background-color: wheat !important;
+		}
+	}
+}
+.drop-content {
+	display: none;
+	position: absolute;
+	background-color: $background-color_1;
+	min-width: 120px;
+	font-size: 16px;
+	top: 34px;
+	z-index: 1;
+	box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.4);
+	a {
+		padding: 12px 10px;
+		border-bottom: 1px solid rgb(197, 197, 250);
+		display: block;
+		transition: all 0.5s ease !important;
+		
+	}
+}
+.drop-content2 {
+	display: none;
+	position: absolute;
+	background-color: $background-color_1;
+	min-width: 120px;
+	font-size: 16px;
+	top: 34px;
+	z-index: 1;
+	box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.4);
+}
+.dropdown2 {
+	&:hover {
+		.drop-content2 {
+			display: block;
+		}
+		.dropBtn2 {
+			background-color: $background-color_2;
+			background-color: wheat;
+		}
+	}
+	.drop-content2 {
+		position: absolute;
+		left: 120px;
+		top: 126px;
+	}
+}
+.dropBtn {
+	.drop-content {
+		a {
+			&:hover {
+				background-color: $background-color_5;
+				background-color: wheat;
+			}
+		}
+	}
+}
+.dropBtn2 {
+	i {
+		margin-left: 15px;
+	}
+}*/
+.dropnav{
+	@media (max-width:700px) {
+        max-height: 10em !important;
+		min-width: 10rem !important;
+		position: relative;
+		top: 5em;
+		left: -5em;
+		left: 1em;
+		margin-left: 2em;
+		margin-right: 4em;
+		padding: 0;
+		margin: 0;
+		
+      }}
+	img{
+		@media (max-width:700px) {
+		display: none;}
+	}
+
+
+@media (max-width:700px) {
+	.navbar {
+		.nav-btn {
+			display: inline-block;
+			position: absolute;
+			top: 0px;
+			right: 0px;
+			/****** Tamaño del background boton del menu*****/
+			label {
+				display: inline-block;
+				width: 80px;
+				height: 70px;
+				padding: 25px;
+				span {
+					display: block;
+					height: 10px;
+					width: 25px;
+					border-top: 3px solid #eee;
+				}
+				&:hover {
+					background-color: $background-color_3;
+					background-color: rgb(213, 185, 133);
+					transition: all 0.5s ease;
+				}
+			}
+		}
+		#nav-check {
+			&:checked {
+				~ {
+					.nav-btn {
+						label {
+							background-color: $background-color_3;
+							background-color: rgb(103, 101, 98);
+							transition: all 0.5s ease;
+						}
+					}
+					.nav-links {
+						height: calc(100vh - 70px);
+						overflow-y: auto;
+					}
+				}
+			}
+			&:not(:checked) {
+				~ {
+					.nav-links {
+						height: 0px;
+					}
+				}
+			}
+		}
+		.nav-links {
+			/*position: absolute;
+			position: relative;*/
+
+			display: flex;
+			flex-direction: column ;
+			text-align: start;
+			width: 50%;
+			background-color: $background-color_3;
+			background-color: rgb(149, 124, 90);
+			transition: all 0.3s ease-in;
+			overflow-y: hidden;
+			top: 70px;
+			right: 0px;
+			a {
+				display: block;
+				color: white;
+			}
+			.loginBtn {
+				padding: 10px 40px;
+				margin: 20px;
+				font-size: 18px;
+				font-weight: bold;
+				color: $color_1;
+			}
+			/*.dropdown {
+				float: none;
+				width: 100%;
+				
+			}
+			.dropdown2 {
+				float: none;
+				width: 100%;
+				
+			}
+			.drop-content {
+				position: relative;
+				background-color: $background-color_4;
+				top: 0px;
+				left: 0px;
+				
+				
+				
+				a {
+					color: $color_1;
+					
+				}
+			}
+			.drop-content2 {
+				position: relative;
+				background-color: $background-color_4;
+				top: 0px;
+				left: 0px;
+				
+			}*/
+		 .dropnav{max-height: 10% !important;}
+		}
+	}
+}

@@ -1,0 +1,7 @@
+@import '../../base-styles/variables.scss';
+@import '../../base-styles/mixins.scss';
+
+.home {
+  @include header-footer;
+  background-image:linear-gradient(to right top,#f7d074,#f79605);
+}
