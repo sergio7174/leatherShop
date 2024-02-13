@@ -104,7 +104,7 @@ This project was created using the following technologies.
 - [React Hooks  ](https://reactjs.org/docs/hooks-intro.html) - For managing and centralizing application state
 - [react-router-dom](https://www.npmjs.com/package/react-router-dom) - To handle routing
 - [axios](https://www.npmjs.com/package/axios) - For making Api calls
-- [React-bootstrap](https://mui.com/) - For User Interface
+- [Sass](https://mui.com/) - For User Interface
 - [React Redux](https://react-redux.js.org/) - manage application state efficiently and provide a more structured mechanism for managing data
 - [React Toastify](https://www.npmjs.com/package/react-toastify) - To display interactive and responsive notifications (toasts) in web applications
 
