@@ -1,6 +1,6 @@
-<h1 align ="center" > 🏆 EcommerElectronic  </h1>
+<h1 align ="center" > 🏆 Leather Store  </h1>
 <h5  align ="center"> 
-Fullstack open source Ecommerce application made with MongoDB, Express, React & Nodejs (MERN) </h5>
+Fullstack open source leather store  application made with MongoDB, Express, React & Nodejs (MERN) </h5>
 <br>
 <br>
 
@@ -27,7 +27,7 @@ In the first terminal
 ```
 $ cd client
 $ npm install (to install client-side dependencies)
-$ npm run  start (to start the client)
+$ npm run  start (to start the client) or npm start
 ```
 
 In the second terminal
@@ -39,19 +39,20 @@ In the second terminal
 ```
 #  --- .env  ---
 
-MONGO_URI:
-PORT:9000
-JWT_SECRET: ''
-STRIPE_SECRET_KEY:''
+DATABASE= "mongodb://0.0.0.0:27017/leather" - YOUR DATABASE NAME
+NODE_ENV= 'development'
+JWT_SECRET= 'Sergio'
+JWT_EXPIRES_IN = 8640000
+JWT_COOKIE_EXPIRES_IN= 8640000
 ```
 
 ```
 # --- Terminal ---
 
 $ npm install (to install server-side dependencies)
-$ npm start (to start the server)
+$ npm start (to start the server) OR nodemon server
 ```
-![Static Badge](https://img.shields.io/badge/build-3.15%20mb%20-brightgreen?style=for-the-badge&label=GitHub%20repo%20size&color=brown)
+
 ![Status project](https://img.shields.io/badge/STATUS-Finished-GREEN?style=for-the-badge)
 
 ## ✔️ Tecnologias Utilizadas:
@@ -68,9 +69,13 @@ $ npm start (to start the server)
 <br>
 ##  Screenshots:
 <br>
-<img src="./FRONTEND/src/assets/systempictures/searchPage.jpg" alt="project screenshot02" />
-<img src="./FRONTEND/src/assets/systempictures/Userprofile.jpg" alt="project screenshot03" />
-<img src="./FRONTEND/src/assets/systempictures/home.jpg" alt="screenshot del proyecto" />
+<img src="./leather-store-main/systemimages/image00.jpg" alt="project screenshot01" />
+<img src="./leather-store-main/systemimages/image01.jpg" alt="project screenshot02" />
+<img src="./leather-store-main/systemimages/image02.jpg" alt="project screenshot03" />
+<img src="./leather-store-main/systemimages/image03.jpg" alt="project screenshot04" />
+<img src="./leather-store-main/systemimages/image04.jpg" alt="project screenshot05" />
+<img src="./leather-store-main/systemimages/image05.jpg" alt="project screenshot06" />
+<img src="./leather-store-main/systemimages/image06.jpg" alt="project screenshot07" />
 <br>
 
 ##  Key Features:
