@@ -51,6 +51,7 @@ JWT_COOKIE_EXPIRES_IN= 8640000
 
 $ npm install (to install server-side dependencies)
 $ npm start (to start the server) OR nodemon server
+NODE VERSION: 16.2.1
 ```
 
 ![Status project](https://img.shields.io/badge/STATUS-Finished-GREEN?style=for-the-badge)
@@ -60,7 +61,7 @@ $ npm start (to start the server) OR nodemon server
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![Static Badge](https://img.shields.io/badge/Redux%20Toolkit-yellow?style=for-the-badge)
 ![Static Badge](https://img.shields.io/badge/axios-black?style=for-the-badge)
-![Static Badge](https://img.shields.io/badge/React%20Bootstrap-lightblue?style=for-the-badge)
+![Static Badge](https://img.shields.io/badge/Sass%20-lightblue?style=for-the-badge)
 ![Static Badge](https://img.shields.io/badge/redux%20persist-aqua?style=for-the-badge)
 ![Static Badge](https://img.shields.io/badge/mongoose-purple?style=for-the-badge)
 ![Static Badge](https://img.shields.io/badge/Express-navy?style=for-the-badge)
