@@ -66,7 +66,7 @@ NODE VERSION: 16.2.1
 ![Static Badge](https://img.shields.io/badge/mongoose-purple?style=for-the-badge)
 ![Static Badge](https://img.shields.io/badge/Express-navy?style=for-the-badge)
 ![Static Badge](https://img.shields.io/badge/multer-teal?style=for-the-badge)
-![Static Badge](https://img.shields.io/badge/Cors%20persist-aqua?style=for-the-badge)
+![Static Badge](https://img.shields.io/badge/Cors%20-aqua?style=for-the-badge)
 ![Static Badge](https://img.shields.io/badge/dotenv%20-yellow?style=for-the-badge)
 <br>
 ##  Screenshots:
