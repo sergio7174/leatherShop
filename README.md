@@ -118,7 +118,7 @@ This project was created using the following technologies.
 - [Dotenv](https://www.npmjs.com/package/dotenv) - Zero Dependency module that loads environment variables
 - [express-validator](https://www.npmjs.com/package/express-validator) - Used in Node.js applications with the Express framework to validate data submitted by users (user input)
 - [nodemon](https://nodemon.io/) - Development utility for Node.js applications. Node.js is a runtime platform that allows you to run JavaScript on the server side.t
-- [Multer] - Handle Images
+- [Multer]() - Handle Images
 
 ####  Database 
 
