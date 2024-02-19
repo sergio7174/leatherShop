@@ -1,4 +1,4 @@
-<h1 align ="center" > 🏆 Leather Store  </h1>
+<h1 align ="center" > 💼 🥾 Leather Shop  </h1>
 <h3  align ="center"> 
 Fullstack open source leather store  application made with MongoDB, Express, React & Nodejs (MERN) </h3>
 <br>
